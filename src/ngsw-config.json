@@ -23,6 +23,9 @@
       "resources": {
         "files": [
           "/assets/**"
+        ],
+        "urls":[
+          "https://wkylin.github.io/ng-funs/**"
         ]
       }
     }

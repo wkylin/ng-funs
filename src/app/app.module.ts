@@ -34,7 +34,7 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     // BrowserModule,
-    BrowserModule.withServerTransition({appId: 'my-app'}),
+    BrowserModule.withServerTransition({appId: 'ng-funs'}),
     BrowserAnimationsModule,
     HttpClientModule,
     SharedModule,
