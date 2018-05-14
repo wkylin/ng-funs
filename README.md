@@ -71,6 +71,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 4. ngh
 5. https://wkylin.github.io/ng-funs/
 
-
 ## Angular Doc
-https://angulardoc.org/repos/detail/github/128766429/angular2/src/summary
+https://angulardoc.org/repos/detail/github/133325024/angular2/%252F/summary
