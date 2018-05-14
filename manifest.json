@@ -1,7 +1,7 @@
 {
-  "name": "Progressive Web App",
-  "short_name": "PWA",
-  "description": "progressive web app.",
+  "name": "Angular Funs",
+  "short_name": "ngFuns",
+  "description": "angular funs, progressive web app.",
   "icons": [
     {
       "src": "assets/home-screen/icon-512x512.png",
