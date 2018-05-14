@@ -1,0 +1,4 @@
+Angular 的指令分为三种：
+1. 组件(Component directive)：用于构建UI组件，继承于 Directive 类
+2. 属性指令(Attribute directive)：用于改变组件的外观或行为
+3. 结构指令(Structural directive)：用于动态添加或删除 DOM 元素来改变 DOM 布局

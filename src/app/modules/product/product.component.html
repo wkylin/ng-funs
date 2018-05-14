@@ -1,0 +1,30 @@
+<div class="app-content">
+  <div class="title">
+    顺序发送 Http 请求：sequentialRequests:
+  </div>
+  <p>Food:{{ sequentialFoods?.name }}</p>
+
+  <hr>
+
+  <div class="title">
+    并行请求：parallelRequests
+  </div>
+  <ol class="ui-list">
+    <li class="ui-list-item" *ngFor="let book of books; let i=index;">
+      {{ i+1 }}:{{ book.title }}
+    </li>
+  </ol>
+  <ol class="ui-list">
+    <li class="ui-list-item" *ngFor="let food of foods; let i=index;">
+      {{ i+1 }}:{{ food.name }}
+    </li>
+  </ol>
+
+  <hr>
+  <div class="title">电影：</div>
+  <ol class="ui-list">
+    <li class="ui-list-item" *ngFor="let movie of movies; let i=index;">
+      {{ i+1 }}: {{ movie.title }}
+    </li>
+  </ol>
+</div>

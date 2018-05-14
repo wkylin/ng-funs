@@ -1,0 +1,25 @@
+<div class="app-content">
+  <div *ngIf="isLogin">
+    <div class="github-bio">
+      <div class="avatar">
+        <img :src="{{userInfo?.avatar_url}}" width="100" alt="">
+      </div>
+      <ul class="text-list">
+        <li>{{ userInfo?.login }}</li>
+        <li>{{ userInfo?.name }}</li>
+        <li>{{ userInfo?.location }}</li>
+        <li>{{ userInfo?.blog }}</li>
+        <li>{{ userInfo?.html_url }}</li>
+        <li>{{ userInfo?.bio }}</li>
+      </ul>
+    </div>
+    <div class="link" [routerLink]="['/my/setting']">Setting</div>
+  </div>
+  <div *ngIf="!isLogin">
+    <div class="link" (click)="signIn()">Sign In</div>
+  </div>
+</div>
+
+
+
+

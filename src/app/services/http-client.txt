@@ -1,0 +1,115 @@
+1. https://github.com/marcelolimabh/httpClient
+2. https://github.com/joezini/angular-http-client
+3. https://github.com/tiangolo/ngx-http-client
+4. https://github.com/etalay/Angular-5-Making-API-calls-with-the-HttpClient-service
+5. https://github.com/sumanthvemula/Angular4-HttpClient-Wrapper
+6. https://scotch.io/@kashyapmukkamala/using-http-interceptor-with-angular2
+7. https://medium.com/@ryanchenkie_40935/angular-authentication-using-the-http-client-and-http-interceptors-2f9d1540eb8
+8. https://offering.solutions/blog/articles/2017/07/19/angular-2-new-http-interface-with-interceptors/
+9. https://stackoverflow.com/questions/46433195/angular-use-modal-dialog-in-candeactivate-guard-service-for-unsubmitted-changes
+10. https://github.com/ova2/frontend-tooling-tutorial/tree/master/angular-playground/router-primeng-confirmdialog
+11. https://forum.primefaces.org/viewtopic.php?p=152034
+12. https://dotblogs.com.tw/kinanson/2017/04/10/194053
+13. https://dotblogs.com.tw/kinanson/2017/03/23/082033
+
+
+Animation
+1. https://juejin.im/post/5a6acd78518825734e3e7a84?utm_source=gold_browser_extension
+2. https://github.com/deepthan/blog-angular
+3. https://github.com/fezaoduke/TranslationInstitute/blob/master/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E7%94%A8ngrx%E7%AE%A1%E7%90%86Angular%E7%8A%B6%E6%80%81.md
+4. https://drafts.csswg.org/web-animations/
+5. https://juejin.im/post/5a39c10351882538d3101129
+6. https://juejin.im/post/5a6aa48f6fb9a01c9a26f591?utm_source=gold_browser_extension
+
+PWAs
+1. https://www.codementor.io/antonihuguetvives/building-pwas-with-angular-5-gerfaz88x?utm_campaign=NG-Newsletter&utm_medium=email&utm_source=NG-Newsletter_240
+2. https://angular.io/guide/service-worker-getting-started#adding-a-service-worker-to-an-existing-app
+3. https://github.com/MrFrontend/js-magazine
+4. https://scotch.io/amp/tutorials/how-to-build-progressive-web-apps-with-angular
+5. https://medium.com/@nsmirnova/creating-pwa-with-angular-5-e36ea2378b5d
+6. https://medium.com/@nsmirnova/creating-pwa-with-angular-5-part-2-progressifying-the-application-449e3a706129
+7. https://angularfirebase.com/lessons/hnpwa-angular-5-progressive-web-app-service-worker-tutorial/
+8. https://blog.kevinyang.net/2017/11/25/angular-pwa/
+9. https://medium.com/google-developer-experts/a-new-angular-service-worker-creating-automatic-progressive-web-apps-part-2-practice-3221471269a1
+10.https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps#add-to-homescreen
+11.https://developers.google.com/web/tools/chrome-devtools/security
+12.https://lavas.baidu.com/
+13.https://coursetro.com/posts/code/64/How-to-Deploy-an-Angular-App-(Angular-4)
+14.https://netbasal.com/sexier-imports-in-typescript-e3c645bdd3c6
+15.https://www.codementor.io/antonihuguetvives/building-pwas-with-angular-5-gerfaz88x
+Cygwin
+1. 安装Cygwin https://cygwin.com/
+2. C:\cygwin64\home\UserName
+3. openssl genrsa -out key.pem 1024
+4. openssl req -new -key key.pem -out cert.csr
+5. openssl x509 -req -in cert.csr -signkey key.pem -out cert.pem
+6. http-server -S  -C cert.pem -K key.pem
+7. chrome://flags/#allow-insecure-localhost
+8. npm install angular-cli-ghpages -g
+10. ng build --prod --base-href https://wkylin/github.io/ng-starter
+11. ngh
+12. notes: register('/ng-pwa/ngsw-worker.js')
+
+rm -rf node_modules
+npm-run-all
+
+http-server
+1. https://github.com/indexzero/http-server
+2. https://github.com/scottcorgan/pushstate-server
+3. https://github.com/divshot/superstatic
+4. https://github.com/scottcorgan/pushstate-server
+5. http://blog.csdn.net/foruok/article/details/52993948
+
+
+Angular-cli
+1. http://sithome.oschina.io/2017/02/11/angular-2-bootstrap-process/
+2. https://malcoded.com/posts/angular-fundamentals-universal-server-side-rendering
+3. https://blog.angular-university.io/angular-2-universal-meet-the-internet-of-the-future-seo-friendly-single-page-web-apps/
+4. https://blog.csdn.net/github_33116729/article/details/78294267?locationNum=7&fps=1
+5. https://zhuanlan.zhihu.com/p/29823560
+
+
+Angular SEO
+1. https://coursetro.com/posts/code/68/Make-your-Angular-App-SEO-Friendly-(Angular-4-+-Universal)
+
+
+Angular-cli-ghpages
+1. https://github.com/angular-schule/angular-cli-ghpages
+2. npm i -g angular-cli-ghpages
+3. ng build --prod --base-href "/ng5-starter/"
+4. ngh
+
+
+WebStorm:
+=================================
+https://www.youtube.com/watch?v=upgjCMHGpwo
+https://github.com/angular/angular-cli/wiki/eject
+1. https://www.sitepoint.com/ultimate-angular-cli-reference/
+2. https://www.sitepoint.com/angular-rxjs-create-api-service-rest-backend/
+3. https://coursetro.com/es/angular-dev/free-course
+4. https://www.jvandemo.com/the-7-step-process-of-angular-router-navigation/
+
+HMR:
+==================================================
+1. https://webpack.js.org/guides/hot-module-replacement/
+
+Gource
+=======================================
+software version control visualization
+1. https://github.com/acaudwell/Gource
+2. http://gource.io/
+
+Angular Doc
+==============================================
+1. https://angulardoc.org/
+
+@ngrx/store
+===============================================
+1. https://medium.com/@bo.vandersteene/advanced-pagination-with-ngrx-store-and-angular-5-f26ca4761cef
+
+
+Angular Universal
+================================================
+1. https://medium.com/@evertonrobertoauler/angular-5-universal-with-transfer-state-using-angular-cli-19fe1e1d352c
+2. http://web.jobbole.com/92884/
+3. https://github.com/angular/angular-cli/wiki/stories-universal-rendering

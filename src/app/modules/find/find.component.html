@@ -1,0 +1,19 @@
+<div class="app-content">
+  <div class="title">
+    指令&&Form
+  </div>
+  <hr>
+  <p>1. 结构指令</p>
+  <p>2. 属性指令</p>
+  <p>3. 模板驱动型表单</p>
+  <p>4. 响应式表单</p>
+  <p>5. 动态表单</p>
+  <form class="ux-form" novalidate #numberForm="ngForm">
+    <input class="input" type='tel' appNumberFormat name="number" placeholder='Input Number' [(ngModel)]='number'>
+  </form>
+  <div class="ux-form-tips">
+    <!--{{ numberForm.value | json }}-->
+    <!--<br/>-->
+    {{ number }}
+  </div>
+</div>

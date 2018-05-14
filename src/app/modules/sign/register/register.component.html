@@ -1,0 +1,17 @@
+<div class="app-content">
+  <form #signUpForm="ngForm" novalidate class="sign-form">
+    <div class="form-group">
+      <label class="form-label" for="userName">用户名：</label>
+      <input id="userName" class="input-control" required name="userName" type="text" placeholder="username">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="password">密 码：</label>
+      <input id="password" class="input-control" required name="password" type="password" placeholder="password">
+    </div>
+    <div class="form-group">
+      <!--<button class="form-button" type="submit" (click)="login()">注 册</button>-->
+      <div class="form-button" [routerLink]="['/home']">Sign Up</div>
+    </div>
+  </form>
+</div>
+

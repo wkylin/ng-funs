@@ -1,0 +1,31 @@
+<div class="app-layout">
+  <div class="app-header">
+    Hello,{{ angular }}
+  </div>
+  <div class="app-body">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="app-footer" *ngIf="isShowTabbar">
+    <div class="tabbar">
+      <div class="tabbar-item" [routerLinkActive]="['active']">
+        <a [routerLink]="['home']">Home</a>
+      </div>
+      <div class="tabbar-item" [routerLinkActive]="['active']">
+        <a routerLink="product">Product</a>
+      </div>
+      <div class="tabbar-item" [routerLinkActive]="['active']">
+        <a routerLink="find">Find</a>
+      </div>
+      <div class="tabbar-item" [routerLinkActive]="['active']">
+        <a routerLink="my">My</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- global loading -->
+<!--<ngx-loading [show]="loading"></ngx-loading>-->
+<!-- global growl -->
+<!--https://github.com/aitboudad/ngx-loading-bar-->
+<ngx-loading-bar color="#ff0000" [includeSpinner]="false"></ngx-loading-bar>
+<!-- primeng confirm dialog -->
+<p-confirmDialog header="Confirm Dialog" class="confirm-dialog"></p-confirmDialog>
