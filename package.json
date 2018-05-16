@@ -1,6 +1,6 @@
 {
   "name": "ng-funs",
-  "version": "1.0.0",
+  "version": "1.6.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng server",
@@ -10,7 +10,7 @@
     "build:dev": "ng build --configuration=dev --output-path=dist-dev",
     "build:prod": "ng build --output-path=dist --verbose=true --stats-json",
     "build": "ng build --prod --aot --extract-css --source-map=true --build-optimizer --extract-licenses=false",
-    "build:server": "ng build --prod --app 1 --output-hashing=false",
+    "build:server": "ng build --prod --output-hashing=false",
     "build:ngh": "ng build --prod --base-href \"https://wkylin.github.io/ng-funs/\"",
     "http:server": "cd dist && http-server -p 9088",
     "ngsw": "yarn run express-data",
@@ -33,9 +33,10 @@
     "ngd": "ngd",
     "ngh": "ngh",
     "hmr": "ng serve --hmr -e=hmr",
+    "docs": "hads ./docs -o",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server.js",
-    "build:client-and-server-bundles": "ng build --prod && ng build --prod --app 1 --output-hashing=false",
+    "build:client-and-server-bundles": "ng build --prod && ng build --prod --output-hashing=false",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
     "build:universal": "npm run build:ssr && npm run serve:ssr",
     "test": "ng test",
@@ -87,6 +88,7 @@
     "cpy-cli": "^1.0.1",
     "del-cli": "^1.1.0",
     "express": "^4.16.3",
+    "hads": "^1.6.1",
     "http-server": "^0.11.1",
     "jasmine-core": "^3.1.0",
     "jasmine-spec-reporter": "^4.2.1",
@@ -107,6 +109,7 @@
     "stylelint-config-standard": "^18.1.0",
     "ts-node": "^6.0.2",
     "tslint": "^5.10.0",
-    "typescript": "^2.7.2"
+    "typescript": "^2.7.2",
+    "webpack-cli": "^2.1.3"
   }
 }

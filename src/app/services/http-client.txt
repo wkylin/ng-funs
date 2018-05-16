@@ -113,3 +113,15 @@ Angular Universal
 1. https://medium.com/@evertonrobertoauler/angular-5-universal-with-transfer-state-using-angular-cli-19fe1e1d352c
 2. http://web.jobbole.com/92884/
 3. https://github.com/angular/angular-cli/wiki/stories-universal-rendering
+
+NGD: Angular Dependencies Graph
+=======================================================
+https://github.com/compodoc/ngd
+
+Hads: Hey it's Another Documentation Server!
+=======================================================
+https://www.npmjs.com/package/hads
+
+
+
+

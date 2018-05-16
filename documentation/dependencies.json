@@ -18,90 +18,90 @@
     "bootstrap": [],
     "__raw": [
       {
-        "pos": 1528,
-        "end": 1744,
+        "pos": 1526,
+        "end": 1742,
         "flags": 0,
         "kind": 265,
         "name": {
-          "pos": 1528,
-          "end": 1648,
+          "pos": 1526,
+          "end": 1646,
           "flags": 0,
           "escapedText": "imports"
         },
         "initializer": {
-          "pos": 1649,
-          "end": 1744,
+          "pos": 1647,
+          "end": 1742,
           "flags": 0,
           "kind": 178,
           "elements": [
             {
-              "pos": 1651,
-              "end": 1743,
+              "pos": 1649,
+              "end": 1741,
               "flags": 0,
               "kind": 182,
               "expression": {
-                "pos": 1651,
-                "end": 1671,
+                "pos": 1649,
+                "end": 1669,
                 "flags": 0,
                 "kind": 180,
                 "expression": {
-                  "pos": 1651,
-                  "end": 1663,
+                  "pos": 1649,
+                  "end": 1661,
                   "flags": 0,
                   "escapedText": "RouterModule"
                 },
                 "name": {
-                  "pos": 1664,
-                  "end": 1671,
+                  "pos": 1662,
+                  "end": 1669,
                   "flags": 0,
                   "escapedText": "forRoot"
                 }
               },
               "arguments": [
                 {
-                  "pos": 1672,
-                  "end": 1678,
+                  "pos": 1670,
+                  "end": 1676,
                   "flags": 0,
                   "escapedText": "routes"
                 },
                 {
-                  "pos": 1679,
-                  "end": 1742,
+                  "pos": 1677,
+                  "end": 1740,
                   "flags": 0,
                   "kind": 179,
                   "properties": [
                     {
-                      "pos": 1681,
-                      "end": 1700,
+                      "pos": 1679,
+                      "end": 1698,
                       "flags": 0,
                       "kind": 265,
                       "name": {
-                        "pos": 1681,
-                        "end": 1694,
+                        "pos": 1679,
+                        "end": 1692,
                         "flags": 0,
                         "escapedText": "enableTracing"
                       },
                       "initializer": {
-                        "pos": 1695,
-                        "end": 1700,
+                        "pos": 1693,
+                        "end": 1698,
                         "flags": 0,
                         "kind": 101
                       }
                     },
                     {
-                      "pos": 1701,
-                      "end": 1741,
+                      "pos": 1699,
+                      "end": 1739,
                       "flags": 0,
                       "kind": 265,
                       "name": {
-                        "pos": 1701,
-                        "end": 1720,
+                        "pos": 1699,
+                        "end": 1718,
                         "flags": 0,
                         "escapedText": "preloadingStrategy"
                       },
                       "initializer": {
-                        "pos": 1721,
-                        "end": 1741,
+                        "pos": 1719,
+                        "end": 1739,
                         "flags": 0,
                         "escapedText": "AppCustomPreloading"
                       }
@@ -114,25 +114,25 @@
         }
       },
       {
-        "pos": 1745,
-        "end": 1772,
+        "pos": 1743,
+        "end": 1770,
         "flags": 0,
         "kind": 265,
         "name": {
-          "pos": 1745,
-          "end": 1756,
+          "pos": 1743,
+          "end": 1754,
           "flags": 0,
           "escapedText": "exports"
         },
         "initializer": {
-          "pos": 1757,
-          "end": 1772,
+          "pos": 1755,
+          "end": 1770,
           "flags": 0,
           "kind": 178,
           "elements": [
             {
-              "pos": 1759,
-              "end": 1771,
+              "pos": 1757,
+              "end": 1769,
               "flags": 0,
               "escapedText": "RouterModule"
             }
@@ -312,7 +312,8 @@
     ],
     "imports": [
       {
-        "name": "BrowserModule"
+        "ns": "BrowserModule",
+        "name": "BrowserModule.withServerTransition(args)"
       },
       {
         "name": "BrowserAnimationsModule"
@@ -334,6 +335,10 @@
       },
       {
         "name": "ConfirmDialogModule"
+      },
+      {
+        "ns": "ServiceWorkerModule",
+        "name": "ServiceWorkerModule.register(args)"
       }
     ],
     "exports": [],
@@ -344,32 +349,32 @@
     ],
     "__raw": [
       {
-        "pos": 1291,
-        "end": 1354,
+        "pos": 1419,
+        "end": 1482,
         "flags": 0,
         "kind": 265,
         "name": {
-          "pos": 1291,
-          "end": 1307,
+          "pos": 1419,
+          "end": 1435,
           "flags": 0,
           "escapedText": "declarations"
         },
         "initializer": {
-          "pos": 1308,
-          "end": 1354,
+          "pos": 1436,
+          "end": 1482,
           "flags": 0,
           "kind": 178,
           "multiLine": true,
           "elements": [
             {
-              "pos": 1310,
-              "end": 1328,
+              "pos": 1438,
+              "end": 1456,
               "flags": 0,
               "escapedText": "AppComponent"
             },
             {
-              "pos": 1329,
-              "end": 1349,
+              "pos": 1457,
+              "end": 1477,
               "flags": 0,
               "escapedText": "AboutComponent"
             }
@@ -377,179 +382,297 @@
         }
       },
       {
-        "pos": 1355,
-        "end": 1564,
+        "pos": 1483,
+        "end": 1959,
         "flags": 0,
         "kind": 265,
         "name": {
-          "pos": 1355,
-          "end": 1366,
+          "pos": 1483,
+          "end": 1494,
           "flags": 0,
           "escapedText": "imports"
         },
         "initializer": {
-          "pos": 1367,
-          "end": 1564,
+          "pos": 1495,
+          "end": 1959,
           "flags": 0,
           "kind": 178,
           "multiLine": true,
           "elements": [
             {
-              "pos": 1369,
-              "end": 1388,
+              "pos": 1497,
+              "end": 1580,
               "flags": 0,
-              "escapedText": "BrowserModule"
+              "kind": 182,
+              "expression": {
+                "pos": 1497,
+                "end": 1560,
+                "flags": 0,
+                "kind": 180,
+                "expression": {
+                  "pos": 1497,
+                  "end": 1539,
+                  "flags": 0,
+                  "escapedText": "BrowserModule"
+                },
+                "name": {
+                  "pos": 1540,
+                  "end": 1560,
+                  "flags": 0,
+                  "escapedText": "withServerTransition"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 1561,
+                  "end": 1579,
+                  "flags": 0,
+                  "kind": 179,
+                  "properties": [
+                    {
+                      "pos": 1562,
+                      "end": 1578,
+                      "flags": 0,
+                      "kind": 265,
+                      "name": {
+                        "pos": 1562,
+                        "end": 1567,
+                        "flags": 0,
+                        "escapedText": "appId"
+                      },
+                      "initializer": {
+                        "pos": 1568,
+                        "end": 1578,
+                        "flags": 0,
+                        "kind": 9,
+                        "text": "ng-funs"
+                      }
+                    }
+                  ]
+                }
+              ]
             },
             {
-              "pos": 1389,
-              "end": 1418,
+              "pos": 1581,
+              "end": 1610,
               "flags": 0,
               "escapedText": "BrowserAnimationsModule"
             },
             {
-              "pos": 1419,
-              "end": 1441,
+              "pos": 1611,
+              "end": 1633,
               "flags": 0,
               "escapedText": "HttpClientModule"
             },
             {
-              "pos": 1442,
-              "end": 1460,
+              "pos": 1634,
+              "end": 1652,
               "flags": 0,
               "escapedText": "SharedModule"
             },
             {
-              "pos": 1461,
-              "end": 1483,
+              "pos": 1653,
+              "end": 1675,
               "flags": 0,
               "escapedText": "AppRoutingModule"
             },
             {
-              "pos": 1484,
-              "end": 1503,
+              "pos": 1676,
+              "end": 1695,
               "flags": 0,
               "escapedText": "LoadingModule"
             },
             {
-              "pos": 1504,
-              "end": 1532,
+              "pos": 1696,
+              "end": 1724,
               "flags": 0,
               "escapedText": "LoadingBarRouterModule"
             },
             {
-              "pos": 1533,
-              "end": 1558,
+              "pos": 1725,
+              "end": 1750,
               "flags": 0,
               "escapedText": "ConfirmDialogModule"
+            },
+            {
+              "pos": 1751,
+              "end": 1847,
+              "flags": 0,
+              "kind": 182,
+              "expression": {
+                "pos": 1751,
+                "end": 1785,
+                "flags": 0,
+                "kind": 180,
+                "expression": {
+                  "pos": 1751,
+                  "end": 1776,
+                  "flags": 0,
+                  "escapedText": "ServiceWorkerModule"
+                },
+                "name": {
+                  "pos": 1777,
+                  "end": 1785,
+                  "flags": 0,
+                  "escapedText": "register"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 1786,
+                  "end": 1811,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "/ng-funs/ngsw-worker.js"
+                },
+                {
+                  "pos": 1812,
+                  "end": 1846,
+                  "flags": 0,
+                  "kind": 179,
+                  "properties": [
+                    {
+                      "pos": 1814,
+                      "end": 1845,
+                      "flags": 0,
+                      "kind": 265,
+                      "name": {
+                        "pos": 1814,
+                        "end": 1821,
+                        "flags": 0,
+                        "escapedText": "enabled"
+                      },
+                      "initializer": {
+                        "pos": 1822,
+                        "end": 1845,
+                        "flags": 0,
+                        "kind": 180,
+                        "expression": {
+                          "pos": 1822,
+                          "end": 1834,
+                          "flags": 0,
+                          "escapedText": "environment"
+                        },
+                        "name": {
+                          "pos": 1835,
+                          "end": 1845,
+                          "flags": 0,
+                          "escapedText": "production"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
       },
       {
-        "pos": 1565,
-        "end": 1970,
+        "pos": 1960,
+        "end": 2365,
         "flags": 0,
         "kind": 265,
         "name": {
-          "pos": 1565,
-          "end": 1578,
+          "pos": 1960,
+          "end": 1973,
           "flags": 0,
           "escapedText": "providers"
         },
         "initializer": {
-          "pos": 1579,
-          "end": 1970,
+          "pos": 1974,
+          "end": 2365,
           "flags": 0,
           "kind": 178,
           "multiLine": true,
           "elements": [
             {
-              "pos": 1581,
-              "end": 1606,
+              "pos": 1976,
+              "end": 2001,
               "flags": 0,
               "escapedText": "AppCustomPreloading"
             },
             {
-              "pos": 1607,
-              "end": 1624,
+              "pos": 2002,
+              "end": 2019,
               "flags": 0,
               "escapedText": "AuthService"
             },
             {
-              "pos": 1625,
-              "end": 1643,
+              "pos": 2020,
+              "end": 2038,
               "flags": 0,
               "escapedText": "PostsService"
             },
             {
-              "pos": 1644,
-              "end": 1669,
+              "pos": 2039,
+              "end": 2064,
               "flags": 0,
               "escapedText": "ConfirmationService"
             },
             {
-              "pos": 1670,
-              "end": 1685,
+              "pos": 2065,
+              "end": 2080,
               "flags": 0,
               "escapedText": "AuthGuard"
             },
             {
-              "pos": 1686,
-              "end": 1794,
+              "pos": 2081,
+              "end": 2189,
               "flags": 0,
               "kind": 179,
               "multiLine": true,
               "properties": [
                 {
-                  "pos": 1693,
-                  "end": 1727,
+                  "pos": 2088,
+                  "end": 2122,
                   "flags": 0,
                   "kind": 265,
                   "name": {
-                    "pos": 1693,
-                    "end": 1708,
+                    "pos": 2088,
+                    "end": 2103,
                     "flags": 0,
                     "escapedText": "provide"
                   },
                   "initializer": {
-                    "pos": 1709,
-                    "end": 1727,
+                    "pos": 2104,
+                    "end": 2122,
                     "flags": 0,
                     "escapedText": "HTTP_INTERCEPTORS"
                   }
                 },
                 {
-                  "pos": 1728,
-                  "end": 1767,
+                  "pos": 2123,
+                  "end": 2162,
                   "flags": 0,
                   "kind": 265,
                   "name": {
-                    "pos": 1728,
-                    "end": 1744,
+                    "pos": 2123,
+                    "end": 2139,
                     "flags": 0,
                     "escapedText": "useClass"
                   },
                   "initializer": {
-                    "pos": 1745,
-                    "end": 1767,
+                    "pos": 2140,
+                    "end": 2162,
                     "flags": 0,
                     "escapedText": "GithubAuthInterceptor"
                   }
                 },
                 {
-                  "pos": 1768,
-                  "end": 1787,
+                  "pos": 2163,
+                  "end": 2182,
                   "flags": 0,
                   "kind": 265,
                   "name": {
-                    "pos": 1768,
-                    "end": 1781,
+                    "pos": 2163,
+                    "end": 2176,
                     "flags": 0,
                     "escapedText": "multi"
                   },
                   "initializer": {
-                    "pos": 1782,
-                    "end": 1787,
+                    "pos": 2177,
+                    "end": 2182,
                     "flags": 0,
                     "kind": 101
                   }
@@ -557,44 +680,44 @@
               ]
             },
             {
-              "pos": 1795,
-              "end": 1881,
+              "pos": 2190,
+              "end": 2276,
               "flags": 0,
               "kind": 179,
               "multiLine": true,
               "properties": [
                 {
-                  "pos": 1802,
-                  "end": 1835,
+                  "pos": 2197,
+                  "end": 2230,
                   "flags": 0,
                   "kind": 265,
                   "name": {
-                    "pos": 1802,
-                    "end": 1817,
+                    "pos": 2197,
+                    "end": 2212,
                     "flags": 0,
                     "escapedText": "provide"
                   },
                   "initializer": {
-                    "pos": 1818,
-                    "end": 1835,
+                    "pos": 2213,
+                    "end": 2230,
                     "flags": 0,
                     "escapedText": "LocationStrategy"
                   }
                 },
                 {
-                  "pos": 1836,
-                  "end": 1874,
+                  "pos": 2231,
+                  "end": 2269,
                   "flags": 0,
                   "kind": 265,
                   "name": {
-                    "pos": 1836,
-                    "end": 1852,
+                    "pos": 2231,
+                    "end": 2247,
                     "flags": 0,
                     "escapedText": "useClass"
                   },
                   "initializer": {
-                    "pos": 1853,
-                    "end": 1874,
+                    "pos": 2248,
+                    "end": 2269,
                     "flags": 0,
                     "escapedText": "HashLocationStrategy"
                   }
@@ -602,44 +725,44 @@
               ]
             },
             {
-              "pos": 1882,
-              "end": 1965,
+              "pos": 2277,
+              "end": 2360,
               "flags": 0,
               "kind": 179,
               "multiLine": true,
               "properties": [
                 {
-                  "pos": 1889,
-                  "end": 1924,
+                  "pos": 2284,
+                  "end": 2319,
                   "flags": 0,
                   "kind": 265,
                   "name": {
-                    "pos": 1889,
-                    "end": 1904,
+                    "pos": 2284,
+                    "end": 2299,
                     "flags": 0,
                     "escapedText": "provide"
                   },
                   "initializer": {
-                    "pos": 1905,
-                    "end": 1924,
+                    "pos": 2300,
+                    "end": 2319,
                     "flags": 0,
                     "escapedText": "RouteReuseStrategy"
                   }
                 },
                 {
-                  "pos": 1925,
-                  "end": 1958,
+                  "pos": 2320,
+                  "end": 2353,
                   "flags": 0,
                   "kind": 265,
                   "name": {
-                    "pos": 1925,
-                    "end": 1941,
+                    "pos": 2320,
+                    "end": 2336,
                     "flags": 0,
                     "escapedText": "useClass"
                   },
                   "initializer": {
-                    "pos": 1942,
-                    "end": 1958,
+                    "pos": 2337,
+                    "end": 2353,
                     "flags": 0,
                     "escapedText": "AppRoutingCache"
                   }
@@ -650,25 +773,115 @@
         }
       },
       {
-        "pos": 1971,
-        "end": 2000,
+        "pos": 2366,
+        "end": 2395,
         "flags": 0,
         "kind": 265,
         "name": {
-          "pos": 1971,
-          "end": 1984,
+          "pos": 2366,
+          "end": 2379,
           "flags": 0,
           "escapedText": "bootstrap"
         },
         "initializer": {
-          "pos": 1985,
-          "end": 2000,
+          "pos": 2380,
+          "end": 2395,
           "flags": 0,
           "kind": 178,
           "elements": [
             {
-              "pos": 1987,
-              "end": 1999,
+              "pos": 2382,
+              "end": 2394,
+              "flags": 0,
+              "escapedText": "AppComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "AppServerModule",
+    "file": "src/app/app.server.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "name": "AppModule"
+      },
+      {
+        "name": "ServerModule"
+      },
+      {
+        "name": "ModuleMapLoaderModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [
+      {
+        "name": "AppComponent"
+      }
+    ],
+    "__raw": [
+      {
+        "pos": 291,
+        "end": 372,
+        "flags": 0,
+        "kind": 265,
+        "name": {
+          "pos": 291,
+          "end": 302,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 303,
+          "end": 372,
+          "flags": 0,
+          "kind": 178,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 305,
+              "end": 320,
+              "flags": 0,
+              "escapedText": "AppModule"
+            },
+            {
+              "pos": 321,
+              "end": 339,
+              "flags": 0,
+              "escapedText": "ServerModule"
+            },
+            {
+              "pos": 340,
+              "end": 367,
+              "flags": 0,
+              "escapedText": "ModuleMapLoaderModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 373,
+        "end": 402,
+        "flags": 0,
+        "kind": 265,
+        "name": {
+          "pos": 373,
+          "end": 386,
+          "flags": 0,
+          "escapedText": "bootstrap"
+        },
+        "initializer": {
+          "pos": 387,
+          "end": 402,
+          "flags": 0,
+          "kind": 178,
+          "elements": [
+            {
+              "pos": 389,
+              "end": 401,
               "flags": 0,
               "escapedText": "AppComponent"
             }
@@ -696,49 +909,49 @@
     "bootstrap": [],
     "__raw": [
       {
-        "pos": 364,
-        "end": 409,
+        "pos": 373,
+        "end": 419,
         "flags": 0,
         "kind": 265,
         "name": {
-          "pos": 364,
-          "end": 376,
+          "pos": 373,
+          "end": 386,
           "flags": 0,
           "escapedText": "imports"
         },
         "initializer": {
-          "pos": 377,
-          "end": 409,
+          "pos": 387,
+          "end": 419,
           "flags": 0,
           "kind": 178,
           "elements": [
             {
-              "pos": 379,
-              "end": 408,
+              "pos": 389,
+              "end": 418,
               "flags": 0,
               "kind": 182,
               "expression": {
-                "pos": 379,
-                "end": 400,
+                "pos": 389,
+                "end": 410,
                 "flags": 0,
                 "kind": 180,
                 "expression": {
-                  "pos": 379,
-                  "end": 391,
+                  "pos": 389,
+                  "end": 401,
                   "flags": 0,
                   "escapedText": "RouterModule"
                 },
                 "name": {
-                  "pos": 392,
-                  "end": 400,
+                  "pos": 402,
+                  "end": 410,
                   "flags": 0,
                   "escapedText": "forChild"
                 }
               },
               "arguments": [
                 {
-                  "pos": 401,
-                  "end": 407,
+                  "pos": 411,
+                  "end": 417,
                   "flags": 0,
                   "escapedText": "routes"
                 }
@@ -748,25 +961,25 @@
         }
       },
       {
-        "pos": 410,
-        "end": 438,
+        "pos": 420,
+        "end": 449,
         "flags": 0,
         "kind": 265,
         "name": {
-          "pos": 410,
-          "end": 422,
+          "pos": 420,
+          "end": 433,
           "flags": 0,
           "escapedText": "exports"
         },
         "initializer": {
-          "pos": 423,
-          "end": 438,
+          "pos": 434,
+          "end": 449,
           "flags": 0,
           "kind": 178,
           "elements": [
             {
-              "pos": 425,
-              "end": 437,
+              "pos": 436,
+              "end": 448,
               "flags": 0,
               "escapedText": "RouterModule"
             }
@@ -793,63 +1006,63 @@
         ],
         "__raw": [
           {
-            "pos": 136,
-            "end": 159,
+            "pos": 139,
+            "end": 163,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 136,
-              "end": 147,
+              "pos": 139,
+              "end": 151,
               "flags": 0,
               "escapedText": "selector"
             },
             "initializer": {
-              "pos": 148,
-              "end": 159,
+              "pos": 152,
+              "end": 163,
               "flags": 0,
               "kind": 9,
               "text": "app-find"
             }
           },
           {
-            "pos": 160,
-            "end": 199,
+            "pos": 164,
+            "end": 204,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 160,
-              "end": 174,
+              "pos": 164,
+              "end": 179,
               "flags": 0,
               "escapedText": "templateUrl"
             },
             "initializer": {
-              "pos": 175,
-              "end": 199,
+              "pos": 180,
+              "end": 204,
               "flags": 0,
               "kind": 9,
               "text": "./find.component.html"
             }
           },
           {
-            "pos": 200,
-            "end": 239,
+            "pos": 205,
+            "end": 245,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 200,
-              "end": 212,
+              "pos": 205,
+              "end": 218,
               "flags": 0,
               "escapedText": "styleUrls"
             },
             "initializer": {
-              "pos": 213,
-              "end": 239,
+              "pos": 219,
+              "end": 245,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 215,
-                  "end": 238,
+                  "pos": 221,
+                  "end": 244,
                   "flags": 0,
                   "kind": 9,
                   "text": "./find.component.scss"
@@ -858,25 +1071,25 @@
             }
           },
           {
-            "pos": 240,
-            "end": 272,
+            "pos": 246,
+            "end": 279,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 240,
-              "end": 253,
+              "pos": 246,
+              "end": 260,
               "flags": 0,
               "escapedText": "animations"
             },
             "initializer": {
-              "pos": 254,
-              "end": 272,
+              "pos": 261,
+              "end": 279,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 256,
-                  "end": 271,
+                  "pos": 263,
+                  "end": 278,
                   "flags": 0,
                   "escapedText": "FadeInAnimation"
                 }
@@ -980,7 +1193,11 @@
   {
     "name": "HomeRoutingModule",
     "file": "modules/home/home-routing.module.ts",
-    "providers": [],
+    "providers": [
+      {
+        "name": "PostsResolver"
+      }
+    ],
     "declarations": [],
     "imports": [
       {
@@ -996,49 +1213,49 @@
     "bootstrap": [],
     "__raw": [
       {
-        "pos": 301,
-        "end": 347,
+        "pos": 399,
+        "end": 443,
         "flags": 0,
         "kind": 265,
         "name": {
-          "pos": 301,
-          "end": 314,
+          "pos": 399,
+          "end": 410,
           "flags": 0,
           "escapedText": "imports"
         },
         "initializer": {
-          "pos": 315,
-          "end": 347,
+          "pos": 411,
+          "end": 443,
           "flags": 0,
           "kind": 178,
           "elements": [
             {
-              "pos": 317,
-              "end": 346,
+              "pos": 413,
+              "end": 442,
               "flags": 0,
               "kind": 182,
               "expression": {
-                "pos": 317,
-                "end": 338,
+                "pos": 413,
+                "end": 434,
                 "flags": 0,
                 "kind": 180,
                 "expression": {
-                  "pos": 317,
-                  "end": 329,
+                  "pos": 413,
+                  "end": 425,
                   "flags": 0,
                   "escapedText": "RouterModule"
                 },
                 "name": {
-                  "pos": 330,
-                  "end": 338,
+                  "pos": 426,
+                  "end": 434,
                   "flags": 0,
                   "escapedText": "forChild"
                 }
               },
               "arguments": [
                 {
-                  "pos": 339,
-                  "end": 345,
+                  "pos": 435,
+                  "end": 441,
                   "flags": 0,
                   "escapedText": "routes"
                 }
@@ -1048,27 +1265,54 @@
         }
       },
       {
-        "pos": 348,
-        "end": 377,
+        "pos": 444,
+        "end": 471,
         "flags": 0,
         "kind": 265,
         "name": {
-          "pos": 348,
-          "end": 361,
+          "pos": 444,
+          "end": 455,
           "flags": 0,
           "escapedText": "exports"
         },
         "initializer": {
-          "pos": 362,
-          "end": 377,
+          "pos": 456,
+          "end": 471,
           "flags": 0,
           "kind": 178,
           "elements": [
             {
-              "pos": 364,
-              "end": 376,
+              "pos": 458,
+              "end": 470,
               "flags": 0,
               "escapedText": "RouterModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 472,
+        "end": 512,
+        "flags": 0,
+        "kind": 265,
+        "name": {
+          "pos": 472,
+          "end": 485,
+          "flags": 0,
+          "escapedText": "providers"
+        },
+        "initializer": {
+          "pos": 486,
+          "end": 512,
+          "flags": 0,
+          "kind": 178,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 488,
+              "end": 507,
+              "flags": 0,
+              "escapedText": "PostsResolver"
             }
           ]
         }
@@ -1093,63 +1337,63 @@
         ],
         "__raw": [
           {
-            "pos": 515,
-            "end": 539,
+            "pos": 568,
+            "end": 592,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 515,
-              "end": 527,
+              "pos": 568,
+              "end": 580,
               "flags": 0,
               "escapedText": "selector"
             },
             "initializer": {
-              "pos": 528,
-              "end": 539,
+              "pos": 581,
+              "end": 592,
               "flags": 0,
               "kind": 9,
               "text": "app-home"
             }
           },
           {
-            "pos": 540,
-            "end": 580,
+            "pos": 593,
+            "end": 633,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 540,
-              "end": 555,
+              "pos": 593,
+              "end": 608,
               "flags": 0,
               "escapedText": "templateUrl"
             },
             "initializer": {
-              "pos": 556,
-              "end": 580,
+              "pos": 609,
+              "end": 633,
               "flags": 0,
               "kind": 9,
               "text": "./home.component.html"
             }
           },
           {
-            "pos": 581,
-            "end": 621,
+            "pos": 634,
+            "end": 674,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 581,
-              "end": 594,
+              "pos": 634,
+              "end": 647,
               "flags": 0,
               "escapedText": "styleUrls"
             },
             "initializer": {
-              "pos": 595,
-              "end": 621,
+              "pos": 648,
+              "end": 674,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 597,
-                  "end": 620,
+                  "pos": 650,
+                  "end": 673,
                   "flags": 0,
                   "kind": 9,
                   "text": "./home.component.scss"
@@ -1158,37 +1402,37 @@
             }
           },
           {
-            "pos": 622,
-            "end": 683,
+            "pos": 675,
+            "end": 736,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 622,
-              "end": 636,
+              "pos": 675,
+              "end": 689,
               "flags": 0,
               "escapedText": "animations"
             },
             "initializer": {
-              "pos": 637,
-              "end": 683,
+              "pos": 690,
+              "end": 736,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 639,
-                  "end": 650,
+                  "pos": 692,
+                  "end": 703,
                   "flags": 0,
                   "escapedText": "MyAnimation"
                 },
                 {
-                  "pos": 651,
-                  "end": 665,
+                  "pos": 704,
+                  "end": 718,
                   "flags": 0,
                   "escapedText": "ListAnimation"
                 },
                 {
-                  "pos": 666,
-                  "end": 682,
+                  "pos": 719,
+                  "end": 735,
                   "flags": 0,
                   "escapedText": "FadeInAnimation"
                 }
@@ -1391,63 +1635,63 @@
         ],
         "__raw": [
           {
-            "pos": 155,
-            "end": 176,
+            "pos": 158,
+            "end": 180,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 155,
-              "end": 166,
+              "pos": 158,
+              "end": 170,
               "flags": 0,
               "escapedText": "selector"
             },
             "initializer": {
-              "pos": 167,
-              "end": 176,
+              "pos": 171,
+              "end": 180,
               "flags": 0,
               "kind": 9,
               "text": "app-my"
             }
           },
           {
-            "pos": 177,
-            "end": 214,
+            "pos": 181,
+            "end": 219,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 177,
-              "end": 191,
+              "pos": 181,
+              "end": 196,
               "flags": 0,
               "escapedText": "templateUrl"
             },
             "initializer": {
-              "pos": 192,
-              "end": 214,
+              "pos": 197,
+              "end": 219,
               "flags": 0,
               "kind": 9,
               "text": "./my.component.html"
             }
           },
           {
-            "pos": 215,
-            "end": 252,
+            "pos": 220,
+            "end": 258,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 215,
-              "end": 227,
+              "pos": 220,
+              "end": 233,
               "flags": 0,
               "escapedText": "styleUrls"
             },
             "initializer": {
-              "pos": 228,
-              "end": 252,
+              "pos": 234,
+              "end": 258,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 230,
-                  "end": 251,
+                  "pos": 236,
+                  "end": 257,
                   "flags": 0,
                   "kind": 9,
                   "text": "./my.component.scss"
@@ -1456,25 +1700,25 @@
             }
           },
           {
-            "pos": 253,
-            "end": 285,
+            "pos": 259,
+            "end": 292,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 253,
-              "end": 266,
+              "pos": 259,
+              "end": 273,
               "flags": 0,
               "escapedText": "animations"
             },
             "initializer": {
-              "pos": 267,
-              "end": 285,
+              "pos": 274,
+              "end": 292,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 269,
-                  "end": 284,
+                  "pos": 276,
+                  "end": 291,
                   "flags": 0,
                   "escapedText": "FadeInAnimation"
                 }
@@ -1499,63 +1743,63 @@
         ],
         "__raw": [
           {
-            "pos": 408,
-            "end": 433,
+            "pos": 507,
+            "end": 532,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 408,
-              "end": 420,
+              "pos": 507,
+              "end": 519,
               "flags": 0,
               "escapedText": "selector"
             },
             "initializer": {
-              "pos": 421,
-              "end": 433,
+              "pos": 520,
+              "end": 532,
               "flags": 0,
               "kind": 9,
               "text": "app-index"
             }
           },
           {
-            "pos": 434,
-            "end": 475,
+            "pos": 533,
+            "end": 574,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 434,
-              "end": 449,
+              "pos": 533,
+              "end": 548,
               "flags": 0,
               "escapedText": "templateUrl"
             },
             "initializer": {
-              "pos": 450,
-              "end": 475,
+              "pos": 549,
+              "end": 574,
               "flags": 0,
               "kind": 9,
               "text": "./index.component.html"
             }
           },
           {
-            "pos": 476,
-            "end": 517,
+            "pos": 575,
+            "end": 616,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 476,
-              "end": 489,
+              "pos": 575,
+              "end": 588,
               "flags": 0,
               "escapedText": "styleUrls"
             },
             "initializer": {
-              "pos": 490,
-              "end": 517,
+              "pos": 589,
+              "end": 616,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 492,
-                  "end": 516,
+                  "pos": 591,
+                  "end": 615,
                   "flags": 0,
                   "kind": 9,
                   "text": "./index.component.scss"
@@ -1564,25 +1808,25 @@
             }
           },
           {
-            "pos": 518,
-            "end": 555,
+            "pos": 617,
+            "end": 654,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 518,
-              "end": 532,
+              "pos": 617,
+              "end": 631,
               "flags": 0,
               "escapedText": "animations"
             },
             "initializer": {
-              "pos": 533,
-              "end": 555,
+              "pos": 632,
+              "end": 654,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 535,
-                  "end": 554,
+                  "pos": 634,
+                  "end": 653,
                   "flags": 0,
                   "escapedText": "SlideInOutAnimation"
                 }
@@ -2040,63 +2284,63 @@
         ],
         "__raw": [
           {
-            "pos": 64,
-            "end": 92,
+            "pos": 66,
+            "end": 95,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 64,
-              "end": 75,
+              "pos": 66,
+              "end": 78,
               "flags": 0,
               "escapedText": "selector"
             },
             "initializer": {
-              "pos": 76,
-              "end": 92,
+              "pos": 79,
+              "end": 95,
               "flags": 0,
               "kind": 9,
               "text": "app-not-found"
             }
           },
           {
-            "pos": 93,
-            "end": 137,
+            "pos": 96,
+            "end": 141,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 93,
-              "end": 107,
+              "pos": 96,
+              "end": 111,
               "flags": 0,
               "escapedText": "templateUrl"
             },
             "initializer": {
-              "pos": 108,
-              "end": 137,
+              "pos": 112,
+              "end": 141,
               "flags": 0,
               "kind": 9,
               "text": "./not-found.component.html"
             }
           },
           {
-            "pos": 138,
-            "end": 182,
+            "pos": 142,
+            "end": 187,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 138,
-              "end": 150,
+              "pos": 142,
+              "end": 155,
               "flags": 0,
               "escapedText": "styleUrls"
             },
             "initializer": {
-              "pos": 151,
-              "end": 182,
+              "pos": 156,
+              "end": 187,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 153,
-                  "end": 181,
+                  "pos": 158,
+                  "end": 186,
                   "flags": 0,
                   "kind": 9,
                   "text": "./not-found.component.scss"
@@ -2439,63 +2683,63 @@
         ],
         "__raw": [
           {
-            "pos": 136,
-            "end": 159,
+            "pos": 139,
+            "end": 163,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 136,
-              "end": 147,
+              "pos": 139,
+              "end": 151,
               "flags": 0,
               "escapedText": "selector"
             },
             "initializer": {
-              "pos": 148,
-              "end": 159,
+              "pos": 152,
+              "end": 163,
               "flags": 0,
               "kind": 9,
               "text": "app-sign"
             }
           },
           {
-            "pos": 160,
-            "end": 199,
+            "pos": 164,
+            "end": 204,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 160,
-              "end": 174,
+              "pos": 164,
+              "end": 179,
               "flags": 0,
               "escapedText": "templateUrl"
             },
             "initializer": {
-              "pos": 175,
-              "end": 199,
+              "pos": 180,
+              "end": 204,
               "flags": 0,
               "kind": 9,
               "text": "./sign.component.html"
             }
           },
           {
-            "pos": 200,
-            "end": 239,
+            "pos": 205,
+            "end": 245,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 200,
-              "end": 212,
+              "pos": 205,
+              "end": 218,
               "flags": 0,
               "escapedText": "styleUrls"
             },
             "initializer": {
-              "pos": 213,
-              "end": 239,
+              "pos": 219,
+              "end": 245,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 215,
-                  "end": 238,
+                  "pos": 221,
+                  "end": 244,
                   "flags": 0,
                   "kind": 9,
                   "text": "./sign.component.scss"
@@ -2504,25 +2748,25 @@
             }
           },
           {
-            "pos": 240,
-            "end": 272,
+            "pos": 246,
+            "end": 279,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 240,
-              "end": 253,
+              "pos": 246,
+              "end": 260,
               "flags": 0,
               "escapedText": "animations"
             },
             "initializer": {
-              "pos": 254,
-              "end": 272,
+              "pos": 261,
+              "end": 279,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 256,
-                  "end": 271,
+                  "pos": 263,
+                  "end": 278,
                   "flags": 0,
                   "escapedText": "FadeInAnimation"
                 }
@@ -2544,63 +2788,63 @@
         ],
         "__raw": [
           {
-            "pos": 275,
-            "end": 299,
+            "pos": 280,
+            "end": 305,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 275,
-              "end": 286,
+              "pos": 280,
+              "end": 292,
               "flags": 0,
               "escapedText": "selector"
             },
             "initializer": {
-              "pos": 287,
-              "end": 299,
+              "pos": 293,
+              "end": 305,
               "flags": 0,
               "kind": 9,
               "text": "app-login"
             }
           },
           {
-            "pos": 300,
-            "end": 340,
+            "pos": 306,
+            "end": 347,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 300,
-              "end": 314,
+              "pos": 306,
+              "end": 321,
               "flags": 0,
               "escapedText": "templateUrl"
             },
             "initializer": {
-              "pos": 315,
-              "end": 340,
+              "pos": 322,
+              "end": 347,
               "flags": 0,
               "kind": 9,
               "text": "./login.component.html"
             }
           },
           {
-            "pos": 341,
-            "end": 381,
+            "pos": 348,
+            "end": 389,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 341,
-              "end": 353,
+              "pos": 348,
+              "end": 361,
               "flags": 0,
               "escapedText": "styleUrls"
             },
             "initializer": {
-              "pos": 354,
-              "end": 381,
+              "pos": 362,
+              "end": 389,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 356,
-                  "end": 380,
+                  "pos": 364,
+                  "end": 388,
                   "flags": 0,
                   "kind": 9,
                   "text": "./login.component.scss"
@@ -2609,25 +2853,25 @@
             }
           },
           {
-            "pos": 382,
-            "end": 418,
+            "pos": 390,
+            "end": 427,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 382,
-              "end": 395,
+              "pos": 390,
+              "end": 404,
               "flags": 0,
               "escapedText": "animations"
             },
             "initializer": {
-              "pos": 396,
-              "end": 418,
+              "pos": 405,
+              "end": 427,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 398,
-                  "end": 417,
+                  "pos": 407,
+                  "end": 426,
                   "flags": 0,
                   "escapedText": "SlideInOutAnimation"
                 }
@@ -2649,63 +2893,63 @@
         ],
         "__raw": [
           {
-            "pos": 143,
-            "end": 170,
+            "pos": 146,
+            "end": 174,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 143,
-              "end": 154,
+              "pos": 146,
+              "end": 158,
               "flags": 0,
               "escapedText": "selector"
             },
             "initializer": {
-              "pos": 155,
-              "end": 170,
+              "pos": 159,
+              "end": 174,
               "flags": 0,
               "kind": 9,
               "text": "app-register"
             }
           },
           {
-            "pos": 171,
-            "end": 214,
+            "pos": 175,
+            "end": 219,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 171,
-              "end": 185,
+              "pos": 175,
+              "end": 190,
               "flags": 0,
               "escapedText": "templateUrl"
             },
             "initializer": {
-              "pos": 186,
-              "end": 214,
+              "pos": 191,
+              "end": 219,
               "flags": 0,
               "kind": 9,
               "text": "./register.component.html"
             }
           },
           {
-            "pos": 215,
-            "end": 258,
+            "pos": 220,
+            "end": 264,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 215,
-              "end": 227,
+              "pos": 220,
+              "end": 233,
               "flags": 0,
               "escapedText": "styleUrls"
             },
             "initializer": {
-              "pos": 228,
-              "end": 258,
+              "pos": 234,
+              "end": 264,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 230,
-                  "end": 257,
+                  "pos": 236,
+                  "end": 263,
                   "flags": 0,
                   "kind": 9,
                   "text": "./register.component.scss"
@@ -2714,25 +2958,25 @@
             }
           },
           {
-            "pos": 259,
-            "end": 295,
+            "pos": 265,
+            "end": 302,
             "flags": 0,
             "kind": 265,
             "name": {
-              "pos": 259,
-              "end": 272,
+              "pos": 265,
+              "end": 279,
               "flags": 0,
               "escapedText": "animations"
             },
             "initializer": {
-              "pos": 273,
-              "end": 295,
+              "pos": 280,
+              "end": 302,
               "flags": 0,
               "kind": 178,
               "elements": [
                 {
-                  "pos": 275,
-                  "end": 294,
+                  "pos": 282,
+                  "end": 301,
                   "flags": 0,
                   "escapedText": "SlideInOutAnimation"
                 }
@@ -2757,38 +3001,38 @@
     "bootstrap": [],
     "__raw": [
       {
-        "pos": 394,
-        "end": 469,
+        "pos": 404,
+        "end": 484,
         "flags": 0,
         "kind": 265,
         "name": {
-          "pos": 394,
-          "end": 404,
+          "pos": 404,
+          "end": 415,
           "flags": 0,
           "escapedText": "imports"
         },
         "initializer": {
-          "pos": 405,
-          "end": 469,
+          "pos": 416,
+          "end": 484,
           "flags": 0,
           "kind": 178,
           "multiLine": true,
           "elements": [
             {
-              "pos": 407,
-              "end": 424,
+              "pos": 418,
+              "end": 436,
               "flags": 0,
               "escapedText": "CommonModule"
             },
             {
-              "pos": 425,
-              "end": 442,
+              "pos": 437,
+              "end": 455,
               "flags": 0,
               "escapedText": "SharedModule"
             },
             {
-              "pos": 443,
-              "end": 465,
+              "pos": 456,
+              "end": 479,
               "flags": 0,
               "escapedText": "SignRoutingModule"
             }
@@ -2796,38 +3040,38 @@
         }
       },
       {
-        "pos": 470,
-        "end": 553,
+        "pos": 485,
+        "end": 573,
         "flags": 0,
         "kind": 265,
         "name": {
-          "pos": 470,
-          "end": 485,
+          "pos": 485,
+          "end": 501,
           "flags": 0,
           "escapedText": "declarations"
         },
         "initializer": {
-          "pos": 486,
-          "end": 553,
+          "pos": 502,
+          "end": 573,
           "flags": 0,
           "kind": 178,
           "multiLine": true,
           "elements": [
             {
-              "pos": 488,
-              "end": 506,
+              "pos": 504,
+              "end": 523,
               "flags": 0,
               "escapedText": "SignComponent"
             },
             {
-              "pos": 507,
-              "end": 526,
+              "pos": 524,
+              "end": 544,
               "flags": 0,
               "escapedText": "LoginComponent"
             },
             {
-              "pos": 527,
-              "end": 549,
+              "pos": 545,
+              "end": 568,
               "flags": 0,
               "escapedText": "RegisterComponent"
             }

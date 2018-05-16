@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
+  mode: "production",
   entry: { server: './server.ts' },
   resolve: { extensions: ['.js', '.ts'] },
   target: 'node',
