@@ -58,7 +58,6 @@
     "@angular/service-worker": "^6.0.3",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
     "@ngx-loading-bar/router": "^2.0.0",
-    "angular2-universal": "^2.1.0-rc.1",
     "core-js": "^2.5.7",
     "json-schema-to-typescript": "^5.5.0",
     "ngx-loading": "^1.0.14",
