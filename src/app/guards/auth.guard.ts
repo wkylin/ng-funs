@@ -5,8 +5,7 @@ import { SettingComponent } from '../modules/my/setting/setting.component';
 
 import { ConfirmationService } from 'primeng/components/common/api';
 
-import { Observable } from 'rxjs/Observable';
-import { Observer } from 'rxjs/observer';
+import { Observable, Observer } from 'rxjs';
 
 @Injectable()
 export class AuthGuard implements CanLoad, CanActivate, CanActivateChild, CanDeactivate<SettingComponent> {

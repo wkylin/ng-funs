@@ -6,9 +6,8 @@ import { environment } from '../../../environments/environment';
 import { PostsService } from '../../services/posts.service';
 import { MyAnimation, ListAnimation } from './item.animations';
 import { FadeInAnimation } from '../../router-animations';
-
-import { Subscription } from 'rxjs/Subscription';
-
+import { Subscription } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -43,7 +42,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit() {
     // this.queryPosts();
     // this.route.data.map((data) => data['posts']).subscribe((posts) => {this.posts = posts['data']; }); // code data
-    this.route.data.map((data) => data['posts']).subscribe((posts) => {this.posts = posts; });
+    this.route.data.pipe(map((data) => data['posts'])).subscribe((data) => {this.posts = data; });
     if (!navigator.onLine) {
       this.offline = 'Sorry, you\'re offline';
     }

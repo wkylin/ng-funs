@@ -1,10 +1,8 @@
+
+import {mergeMap, map, filter} from 'rxjs/operators';
 import { Component, OnInit, VERSION, ViewEncapsulation } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
-
-import 'rxjs/add/operator/filter';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/mergeMap';
 import { RouterAnimation } from './router-animations';
 import { EventBusService } from './services/event-bus.service';
 
@@ -46,16 +44,16 @@ export class AppComponent implements OnInit {
       }
     });
 
-    this.router.events.filter(event => event instanceof NavigationEnd)
-      .map(() => this.activatedRoute)
-      .map(route => {
+    this.router.events.pipe(filter(event => event instanceof NavigationEnd),
+      map(() => this.activatedRoute),
+      map(route => {
         while (route.firstChild) {
           route = route.firstChild;
         }
         return route;
-      })
-      .filter(route => route.outlet === 'primary')
-      .mergeMap(route => route.data)
+      }),
+      filter(route => route.outlet === 'primary'),
+      mergeMap(route => route.data))
       .subscribe((event) => {
         this.titleService.setTitle(event['title']);
         if (!event['isShowTabbar']) {

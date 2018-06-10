@@ -1,9 +1,11 @@
+
+import {tap} from 'rxjs/operators';
 import { Injectable } from '@angular/core';
 import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest, HttpResponse, HttpErrorResponse } from '@angular/common/http';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
-import 'rxjs/add/operator/do';
+
 
 // https://github.com/settings/tokens
 // https://scotch.io/@kashyapmukkamala/using-http-interceptor-with-angular2
@@ -23,7 +25,7 @@ export class GithubAuthInterceptor implements HttpInterceptor {
     }
     console.log(authReq);
     const started = Date.now();
-    return next.handle(authReq).do(
+    return next.handle(authReq).pipe(tap(
       (event: any) => {
         if (event instanceof HttpResponse) {
           const elapsed = Date.now() - started;
@@ -36,6 +38,6 @@ export class GithubAuthInterceptor implements HttpInterceptor {
             console.log('401');
           }
         }
-      });
+      }));
   }
 }

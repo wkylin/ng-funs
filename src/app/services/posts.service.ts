@@ -1,7 +1,10 @@
+
+import {forkJoin as observableForkJoin } from 'rxjs';
+import { map } from 'rxjs/operators';
+
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/forkJoin';
+
 import { environment } from '../../environments/environment';
 
 @Injectable()
@@ -50,7 +53,7 @@ export class PostsService {
 
   // 并行发送多个请求
   parallelRequests() {
-    return Observable.forkJoin(
+    return observableForkJoin(
       this.http.get(this.apiBase + '/api/books'),
       this.http.get(this.apiBase + '/api/foods')
     );
@@ -58,10 +61,10 @@ export class PostsService {
 
   // 顺序发送 Http 请求
   sequentialRequests() {
-    const swq$ = this.http.get(this.apiBase + '/api/movies').mergeMap(posts => {
+    const swq$ = this.http.get(this.apiBase + '/api/movies').pipe(map(posts => {
       posts[0]['title'] += ' Sequential';
       return this.http.post(this.apiBase + '/api/foods', {'name': posts[0]['title']});
-    });
+    }));
     return swq$;
   }
 }

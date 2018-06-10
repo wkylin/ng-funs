@@ -2,7 +2,7 @@ import { Component, HostBinding, OnInit, OnDestroy } from '@angular/core';
 import { PostsService } from '../../services/posts.service';
 import { FadeInAnimation } from '../../router-animations';
 
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-product',
