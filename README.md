@@ -1,6 +1,6 @@
 # Angular Funs
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.0.
 
 ## Development server
 
@@ -33,7 +33,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 2. [https://github.com/wkylin/ng-funs](https://github.com/wkylin/ng-funs)
 
-## Update angular6.0
+## Update Angular 7.0
+参考： [https://update.angular.io/](https://update.angular.io/)
+
+## Update Angular6.0
 
 1. npm uninstall -g @angular/cli
 2. npm install -g @angular/cli

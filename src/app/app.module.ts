@@ -11,7 +11,7 @@ import { AppRoutingCache } from './app-routing.cache';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
-import { LoadingModule } from 'ngx-loading';
+// import { LoadingModule } from 'ngx-loading';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 
 import { SharedModule } from './modules/shared/shared.module';
@@ -39,11 +39,11 @@ import { environment } from '../environments/environment';
     HttpClientModule,
     SharedModule,
     AppRoutingModule,
-    LoadingModule,
+    // LoadingModule,
     LoadingBarRouterModule,
     ConfirmDialogModule,
-    ServiceWorkerModule.register('/ng-funs/ngsw-worker.js', {enabled: environment.production})  // ngh
-    // ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})  // dev
+    // ServiceWorkerModule.register('/ng-funs/ngsw-worker.js', {enabled: environment.production})  // ngh
+    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})  // dev
   ],
   providers: [
     AppCustomPreloading,
