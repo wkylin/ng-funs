@@ -31,7 +31,7 @@
     "clean:local": "del-cli dist-local",
     "clean:dist": "del-cli dist",
     "ngd": "ngd",
-    "ngh": "ngh",
+    "ngh": "npx ngh",
     "hmr": "ng serve --hmr -e=hmr",
     "docs": "hads ./docs -o",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",

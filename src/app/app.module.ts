@@ -42,8 +42,8 @@ import { environment } from '../environments/environment';
     // LoadingModule,
     LoadingBarRouterModule,
     ConfirmDialogModule,
-    // ServiceWorkerModule.register('/ng-funs/ngsw-worker.js', {enabled: environment.production})  // ngh
-    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})  // dev
+    ServiceWorkerModule.register('/ng-funs/ngsw-worker.js', {enabled: environment.production})  // ngh
+    // ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})  // dev
   ],
   providers: [
     AppCustomPreloading,
