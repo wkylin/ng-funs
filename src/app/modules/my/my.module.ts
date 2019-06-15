@@ -5,7 +5,9 @@ import { MyComponent } from './my.component';
 import { SettingComponent } from './setting/setting.component';
 import { IndexComponent } from './index/index.component';
 import { SharedModule } from '../../modules/shared/shared.module';
-import { ConfirmDialogModule, ConfirmationService, ButtonModule } from 'primeng/primeng';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { ButtonModule } from 'primeng/button';
+import { ConfirmationService } from 'primeng/api';
 
 @NgModule({
   imports: [
