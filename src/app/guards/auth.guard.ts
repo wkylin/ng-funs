@@ -3,17 +3,17 @@ import { CanLoad, CanActivate, CanActivateChild, CanDeactivate } from '@angular/
 import { AuthService } from '../services/auth.service';
 import { SettingComponent } from '../modules/my/setting/setting.component';
 
-// import { ConfirmationService } from 'primeng/api';
-
-// import { Observable, Observer } from 'rxjs';
+import { ConfirmationService } from 'primeng/api';
+//
+import { Observable, Observer } from 'rxjs';
 
 @Injectable()
 export class AuthGuard implements CanLoad, CanActivate, CanActivateChild, CanDeactivate<SettingComponent> {
 
-  // constructor(private authService: AuthService, private confirmationService: ConfirmationService) {
-  // }
-  constructor(private authService: AuthService) {
+  constructor(private authService: AuthService, private confirmationService: ConfirmationService) {
   }
+  // constructor(private authService: AuthService) {
+  // }
 
   /**
    * 验证是否有权限加载一个异步模块
@@ -58,24 +58,24 @@ export class AuthGuard implements CanLoad, CanActivate, CanActivateChild, CanDea
   }*/
 
   canDeactivate(target: SettingComponent) {
-    // const can = target.hasChanges();
-    // if (can) {
-    //   return true;
-    // }
+    const can = target.hasChanges();
+    if (can) {
+      return true;
+    }
 
-    return true;
-    // return Observable.create((observer: Observer<boolean>) => {
-    //   this.confirmationService.confirm({
-    //     message: 'You have unsaved changes. Are you sure you want to leave this page?',
-    //     accept: () => {
-    //       observer.next(true);
-    //       observer.complete();
-    //     },
-    //     reject: () => {
-    //       observer.next(false);
-    //       observer.complete();
-    //     }
-    //   });
-    // });
+    // return true;
+    return Observable.create((observer: Observer<boolean>) => {
+      this.confirmationService.confirm({
+        message: 'You have unsaved changes. Are you sure you want to leave this page?',
+        accept: () => {
+          observer.next(true);
+          observer.complete();
+        },
+        reject: () => {
+          observer.next(false);
+          observer.complete();
+        }
+      });
+    });
   }
 }

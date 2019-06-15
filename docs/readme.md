@@ -1,6 +1,6 @@
 ### Angular NgFuns
 
-基于最新`Angular 6`, 快速学习Angular的开源小项目，欢迎Star,谢谢
+基于最新`Angular 8`, 快速学习Angular的开源小项目，欢迎Star,谢谢
 
 * [快速入门](start.md)
 
